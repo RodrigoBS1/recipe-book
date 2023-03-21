@@ -1,3 +1,11 @@
-class RecipeMain {
-    constructor(recipeName, categoryOfFood, ingredientsOfRecipe, howToPrepare, )
+export default class RecipeBook {
+    constructor(bookName, foodRegion, kindOfFood) {
+        this.bookName = bookName;
+        this.foodRegion = foodRegion;
+        this.kindOfFood = kindOfFood;
+    }
+
+    addRecipeBook (book) {
+        this.bookName.push(book)
+    }
 }
