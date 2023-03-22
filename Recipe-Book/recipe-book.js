@@ -1,11 +1,12 @@
 export default class RecipeBook {
-    constructor(bookName, foodRegion, kindOfFood) {
+    constructor(bookName = [], foodRegion, kindOfFood) {
         this.bookName = bookName;
         this.foodRegion = foodRegion;
         this.kindOfFood = kindOfFood;
     }
 
-    addRecipeBook (book) {
-        this.bookName.push(book)
+    addRecipeBook (nameOfBook) {
+        this.bookName.push(nameOfBook);
+        console.log(`The recipe book ${nameOfBook} was succesfully added`);
     }
 }
